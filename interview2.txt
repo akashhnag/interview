@@ -1,0 +1,46 @@
+Nodejs:
+q) how is node faster than other languages?
+a) because it runs on a single thread
+q) how do i get synchronity in an asynchronous nodejs program?
+a) with the help of callbacks, promises and async await.
+q) what do you prefer between async await and promise?
+q) differentiate between async.parallel and async.series.
+q) difference between promise.all and promise.allSettled?
+q) what are globals provided by node application?
+a) process
+q) how to determinw whether the external node packages used are safe to use or not?
+q) strategy to debug nodejs application.
+a) debugger module
+q) explain routing mechanism in express js.
+q) what are middleware in express? id middleware confined to request or can be added to response also?
+q) event driven development in nodejs. event emitter etc.
+q) how do you handle unhandable exceptions?
+q) difference between npm and yarn?
+q) contents of package.json?
+q) diffrence between dependencies and dev dependencies.
+q) what is the LTS in npm?
+q) how do you handle different localization in node?
+q) sub process in node?
+q) how to authenticate and authorize a request in nodejs?
+q) what is jwt? what informations does it store? what encryption method does it use? how do we assign its lifetime?
+
+database:
+q)table storage engines in mysql.
+q)indexing in mysql.
+q)stored procedures in mysql.
+q)how to join 2 tables in mongodb.
+q)benefits of mongoose.
+q)aggregate functions in mongodb.
+q)partial index in mongodb.
+
+containerization:
+q)how docker functions?
+
+versioning:
+q)why to create different branches in git?
+q)git rebase and cherrypicking?
+
+
+
+
+ 

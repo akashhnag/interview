@@ -1,0 +1,68 @@
+How node process model works and 
+is different compared to other technologies like .net or
+python PHP java etc
+1) what are basic things which is different in node that makes
+node faster to other tech
+2.runs on single thread
+3.internally uses lib UV library 
+4.explains event loop
+5.Company names which uses Node and why do they use it
+6) since node is a sync how to execute code synchronously
+7.callback
+8.async await
+9. promises
+10. async await vs promises
+11.module named a sync
+12) what is a sync.series and a sync.parallel
+13) difference between promise.all and promise.settled promise.any
+14) what are global s provided by node 
+ 15.example: window, process, etc
+16) how to check if all the N.P.m packages we are using are safe to use or not
+17) how do you debug
+18) express look back sequel 
+19) how routing mechanism works in express
+20) Middle wares in express
+21) can we use middle-ware in response? scenarios?
+22) Event driven development for ex: event emitter etc
+23) How do you deal with exceptions
+      not try catch but unhanded exceptions etc
+     we log those exception to log file ( this are catch-able exceptions)
+24) API development using other method except get and post
+25) difference between N.P.M vs yarn
+26) what is package.JSON file and all the sections under it
+27) How node process will detect whether this is DEV 
+      environment or prod environment and it should use DEV dependency or not
+28) while selecting node version there is L.T.S what does  L.T.S stand for 
+      ( it is most stable version )
+29) How you deal with localization in node ? localization with different language 
+30) Sub processes in node
+      eg: You need to run binary from the server get o/p of that binary and
+31. use it in my node process
+32) how do you authenticate and authorize the request
+33  when it is made from front end to backed ?
+34 (J.W.T token)
+33) different token mechanisms
+34) what type of info does J.W.T token contain
+ 35. what encryption algorithm it is using to encrypt data 
+      front end 
+36) what features did you find in angular/react that attracted you to the technology
+37) difference between prod build and Dev build
+38) if there is error in prod environment build ( front end ) where errors are displayed
+39) Life cycles in angular / react
+     DB
+39) Table storage engines in MySQL
+40) Indexing
+41) Stored procedures in MySQL
+       NO SQL
+42) Join two tables in MongoDB
+43) what is mongoose and benefits of mongoose
+44) difference between mongoose and MongoDB
+45) aggregate functions in MongoDB
+46) 2D indexes and partial indexes in MongoDB
+47) what is docker and Kubernetes
+      benefits / how it works etc.
+48) what is SVN and git and in git why we use branches
+49) undo code pushed in  branch which is initiated from master branch
+     it should be initiated from development branch
+50) what is cherry picking, re-base, stashing etc in git
+51) what is Agile methodology

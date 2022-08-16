@@ -1,0 +1,36 @@
+A callback is a function whick is called after the completion of a task.
+or
+A callback function is passed as a parameter to a function and runs after the excution
+of the first function.
+
+e.g.
+
+fs.readFile('file.txt','utf-8',(err,data)=>{
+    if(err){
+        throw err
+    }else{
+        console.log(data);
+    }
+})
+
+e.g. user defined
+function A(callback) {
+    setTimeout(() => {
+        console.log('This is A.');
+        callback()
+    }, 3000);
+}
+
+function B() {
+    console.log('This is B.');
+}
+
+A(B);
+
+
+We use async.parallel when we have to run multiple tasks independent of each other.
+
+syntax: async.parallel(task,callback)
+
+Here, task can be an array, an object or an iterable. The callback excutes after all the 
+tasks are complete. It contains the result of all the tasks run before it.
