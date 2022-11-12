@@ -1,0 +1,28 @@
+1) what is hoisting?
+a) JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+
+e.g) 	x=5
+	console.log(x);
+	var x;
+	
+2) what is closure in javscript?
+a) Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
+
+q) what is deep and shallow copy?
+a) anytime you copy an object with assignment, the reference is shared and not the value.
+This leads to mutability of an object.
+
+To avoid this, we use Object.assign or spread operator to copy contents of one object to another. 
+But this only performs "shallow copy" which means that if there are nested objects, the nested
+objects wont be copied.
+
+To copy nested objects, you need to stringify the given object and parse it again:
+let obj1=JSON.parse(JSON.stringify(obj1));
+
+This is called "deep copy"
+
+This again has a problem. If you have a Date or function defined inside an object. It won't get 
+stringified and will be avoided in the new object.
+
+To again resolve this, we can use an external library called "lodash". 
+let obj2=_.cloneDeep(obj1)

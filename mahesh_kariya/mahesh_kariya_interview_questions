@@ -1,0 +1,65 @@
+1) What are promises? give an example.
+a) Promises are used to execute multiple asynchronous operations where using a callback could 
+lead to "callback hell" and create an unmanageable code.
+
+Promises have 4 stages:
+1) Fulfilled: The promise action succeeded.
+2) Rejected: The promise action failed.
+3) Pending: The promise action niether fulfilled nor rejected.
+4) Settled: The promise action either fulfilled or rejected.
+
+Promise consumer: Any function can consume the promise with the help of "then()" and "catch()"
+methods.
+
+follow up questions:
+q) what is an asynchronous operation?
+a) asynchronous operation is the ability of a javascript program to run a long running task in the background while still receptive of new operations and execute them and later comeup with the result of the long running operation.
+
+q) what are callbacks?
+a) In javascript, functions are first class citizens which means they can be passed as an argument to other functions and used anywhere in the lifetime of that function.
+
+Helps where the result of asynchronous operation is required for next batch of operations.
+
+q) what is a callback hell?
+a) callback hells are bunch of nested callback functions where result of a callback is dependent on previous callback. It creats a pyramid like structure which leads to unmanageable and unreadable code.
+
+q) how can callback hell be avoided?
+a) It can be avoided using a promise or async await.
+
+q) what is async await?
+a) async-await is a syntactical sugar of Promises, which means that it makes implementing Promises a easier. 
+
+"async" makes a function return a Promise, "await" makes a function wait for a Promise. 
+
+"await" can be only called inside an async function.
+
+
+2) what do you use for authentication? explain jwt. How to use it?
+a) JWT stands for Json Web Token. it is an open standard to for sharing sensitive information in json format between client and server. The data is properly encrypted (signed) from the server side so that it cannot be tampered while in transit.
+
+Workflow of JWT:
+1) Client sends login credentials as request.
+2) Server verifies it. prepares other useful information for authentication and authorization. Signs it and attaches an expiry date to the info. 
+3) Sent back to the client and client can perform authorization based on the token.
+4) Henceforth just the token can be sent as headers to the server for following requests.
+
+jwt.sign({id:1,name:akash},"top-secret", { algorithm: 'RS256' }, function(err, token) {
+  console.log(token);
+});
+
+jwt.verify()
+3) create a get and post request.
+4) what is middleware?
+5) what is call,bind and apply?
+a) call function helps to refer the value of "this" to any object.
+apply is same as "call" but it takes array of values as second argument.
+bind return a function which can be called later.
+
+6) what are closures?
+a) closures are ability of inner function to access the global scope or variables of outer function.
+
+7) what is a spread operator?
+8) what is difference between let,const and var?
+9) what are arrow function?
+10) explain about "this" key word? and there behaviour in arrow funtions?
+11) return 3rd highest and 3rd lowest number in an array.

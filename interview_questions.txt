@@ -1,8 +1,7 @@
-How node process model works and 
-is different compared to other technologies like .net or
-python PHP java etc
-1) what are basic things which is different in node that makes
-node faster to other tech
+1) How node process model works and is different compared to other technologies like .net or
+python PHP java etc?
+
+2) what are basic things which is different in node that makes node faster to other tech
 2.runs on single thread
 3.internally uses lib UV library 
 4.explains event loop
