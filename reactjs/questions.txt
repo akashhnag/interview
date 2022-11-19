@@ -1,0 +1,88 @@
+1) what is doctype??
+a) its not an html tag but an information to the web browser about what type of documet to 
+expect.
+
+2) is declaring doctype necessary?
+a) yes, declaring doctype in necessary or the browser start behaving like old standards.
+
+3) difference between css and css3.
+a) 1) css3 is faster
+2) it supports 3d transformations and animations
+3) it supports responsive design
+4) it can be divided into modules
+
+4) box sizing in css
+a) it enables the padding and border property to be included in the height and width of the 
+element.
+
+.apply-box{
+    box-sizing: border-box;
+}
+
+5) ecmascript in javascript
+a) ecmascript is standard for javascript. it works towards making javascript a better scripting
+language that includex syntax, error handling, datatypes, inheritance, built in function etc.
+
+6) difference between let,const and var
+a var is global and functional scoped. var can be re-declared and updated.var is hoisted and 
+initialized to "undefined".
+let is block scoped. it cannot be re-declared but can be updated. let is hoisted but not 
+initialized.
+const is also block scoped. it can neither be updated or re-declared. const is hoisted and not
+initialized. const should be initialzed at the time of declaration.
+
+7) spread operator in javascript
+a) spread operators are used to copy the contents of an object to another.
+
+8) arrow function in javascript.
+a) arrow functions are an iteration over normal functions introduced in ES6. it makes functions
+easier to use. 
+
+9) what is typescript?
+a) it is a syntactical superset of javascript which adds static typing (allows us to add types
+ to the variables).
+
+10) set timeout and set interval? how to stop it?
+a) setTimeout will execute a function after a given time. setInterval does the same thing but it 
+continously keeps doing it unless stopped explicitly. to stop the setTimeout method we can use
+"clearTimeout" and for stoping the setInterval we can use "clearInterval".
+
+11) highest occurence in the array
+
+12) explain reactjs
+a) reactjs is a front end javascript library to build UI interfaces.
+
+13) difference between uncontrolled and controlled components in reactjs?
+a) controlled components are handled by state where as uncontrolled components are handled by
+DOM.
+
+14) what are hooks in reactjs?
+a)hooks allows functional components to have access to the state and lifecycle methods.
+it can be only called inside a functional component.
+defined at the top level of the functional component.
+it cannot be conditional.
+
+15) what are props and why we use them?
+a) props stands for properties. they are arguments passed on to react components. they are passed
+as HTML attribute.
+used to pass values from parent to child component.
+
+16) is props the best way to transfer data to components?
+a) depends.
+
+17) what is redux? what are middlewares in redux?
+a) redux is predictable container for storing state for javascript applications.
+it is a store to keep all states that can be accessed by number of components. the components 
+can also make changes to the store but its not a as simple as updating a state using hooks.
+certain procesure needs to be followed.
+
+the store values can be updated using reducers and actions.
+
+reducer is a function that takes in current state and action as arguments ans return updated state.
+
+we can create store using createStore method in redux.
+
+we can use store.dispatch() method to dispatch an action to the reducer. 
+
+middleware: it intercepts actions and modify them and passes on to reducer.
+we can use it for logging, error handling, perform async operations etc.

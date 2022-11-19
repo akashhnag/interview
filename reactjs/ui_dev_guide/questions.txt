@@ -1,0 +1,29 @@
+Javascript:
+
+q) difference between let, const and var? 
+q) var and let in a for loop?
+q) const with primitive and non primitive
+q) copy an object to another. deep and shallow.
+q) map vs filter.
+q) prototype
+q) arrow function vs normal function?
+q) when can you use bind()?
+q) difference between rest and spread operator?
+q) get 2nd last element from the array
+q) console.log(3+'3');
+    console.log(3-'3);
+
+q) middleware in nodejs
+
+React:
+q) diffrence between element and component?
+q) pure components
+q) Refs
+q) forward ref?
+q) virtual dom?
+q) interceptors in front end
+q) react fiber
+q) react life cycles
+q) when do we use higher order component?
+q) lazy loading
+q) authorization in react routing 
