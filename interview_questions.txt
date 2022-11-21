@@ -13,8 +13,8 @@ python PHP java etc?
 10. async await vs promises
 11.module named a sync
 12) what is a sync.series and a sync.parallel
-13) difference between promise.all and promise.settled promise.any
-14) what are global s provided by node 
+13) difference between promise.all and promise.allsettled promise.any
+14) what are globals provided by node 
  15.example: window, process, etc
 16) how to check if all the N.P.m packages we are using are safe to use or not
 17) how do you debug

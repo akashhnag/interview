@@ -1,0 +1,42 @@
+1) what are features of reactjs?
+a) React uses:
+i) jsx
+ii) virtual dom
+iii) one way data-binding
+iv) component based architecture
+ 
+2) what is one way data binding?
+3) what is babel?
+a) babel is a javascript transpiler used to convert es6 code to es5 for browsers to understand.
+
+4) difference between virtual dom and real dom?
+a) virtual dom is a copy of real dom. whenever there is an updation, firstly the virtual dom is updated, then the virtual dom is compared with the real dom and and only the changes are updated on real dom instead of updating the entire dom.
+
+5) is reactjs a framework or library?
+a) its a library.
+
+6) what is es6?
+a) its a javascript standard that works towards making javascript a better and efficient programming language.
+
+7) what are different types of components in reactjs? which one is more useful? 
+a) function component, class component.
+
+8) usestate in reactjs?
+a) used to manage the state of a component.
+
+9) controlled and uncontrolled component?
+a) components managed by the dom are uncontrolled components while that managed by states are controlled components.
+
+10) prop drilling in reactjs?
+a) method of passing props deep down the hierarchy of components.
+
+11) can we create custom hooks?
+a) yes, we can
+
+12) react.strictmode?
+a) its a developer tool to check for issues in a web application.
+
+13) pass data in component?
+a) we pass data in component like attributes in HTML.
+
+14) how react router works in react?

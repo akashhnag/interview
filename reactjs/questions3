@@ -1,0 +1,54 @@
+q) find minimum value in an array?
+q) what is reactjs?
+a) reactjs is a javscript frontend library to create UI interfaces.
+
+q) what are hooks in reactjs?
+a) hooks in reactjs enable functional components to acces state and lifecycle methods.
+
+q) how many hooks are there in reactjs?
+a) useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo.
+
+q) what is useEffect?
+a) useEffect is used to create side effects in a react component.
+
+q) what is useState?
+a) useState is used to create and manage state inside a component.
+
+q) features of react?
+a) jsx, one way data binding, component based architecture, virtual dom.
+
+q) what is jsx?
+a) jsx stands for javascript and xml. it allows html to be written inside react.
+
+q) what is a component?
+a) it is an independent and reusable element just like javascript functions. it works in isolation
+an returns HTML.
+
+q) difference between real dom and virtual dom??
+a) real dom is actually what you see in the screen whereas virtual dom is a blueprint of the
+real dom. updating the real dom is costly than virtual dom.
+
+q) explain redux flow?
+
+q) what is javascript?
+a) it is a lightweight programming language used to create dynamic web pages.
+
+q) map,filter and find method?
+q) map and forEach?
+q) props in reactjs?
+a) props stands for 'properties' and is a value passed from a parent componet to child component as 
+an attribute.
+
+q) difference between state and props?
+a) props gets passed on to the child components whereas state is managed within the component.
+
+q) react router?
+q) what is html?
+q) explain html layout?
+q) tags used in html?
+
+q) strong and bold tag?
+a) strong is for content of importance. bold is for making text bold.
+
+q) types of css?
+a) inline, internal, external

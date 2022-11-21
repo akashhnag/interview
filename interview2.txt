@@ -1,19 +1,44 @@
 Nodejs:
 q) how is node faster than other languages?
-a) because it runs on a single thread
+a) because it runs on a single thread.
+
 q) how do i get synchronity in an asynchronous nodejs program?
 a) with the help of callbacks, promises and async await.
+
 q) what do you prefer between async await and promise?
+
 q) differentiate between async.parallel and async.series.
+a) async has number of cotrol flows:
+i) parallel
+ii) series
+iii) waterfall
+iv) queue
+v) priority queue
+vi) race
+
 q) difference between promise.all and promise.allSettled?
+a) promise.all takes in an iterable of promises and returns a single promise. This promise is 
+fulfilled when all the promises are fulfilled, if any one promise was rejected, the resultant
+promise is also rejected.
+promise.allSettled too takes in a interable of promises and returns a single promise. it will 
+return an object consisting of "Status" that may be "fulfilled" or "rejected" and the "value" if
+the promise return a value on resolve. on rejected status, it returns the rejected error 
+
 q) what are globals provided by node application?
-a) process
-q) how to determinw whether the external node packages used are safe to use or not?
+a) These are global objects present throught the module and need not be imported
+process, __filename, __dirname, require(), module, exports
+
+q) how to determine whether the external node packages used are safe to use or not?
+
 q) strategy to debug nodejs application.
 a) debugger module
+
 q) explain routing mechanism in express js.
+
 q) what are middleware in express? id middleware confined to request or can be added to response also?
+
 q) event driven development in nodejs. event emitter etc.
+a) 
 q) how do you handle unhandable exceptions?
 q) difference between npm and yarn?
 q) contents of package.json?

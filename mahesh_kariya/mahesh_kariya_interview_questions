@@ -16,7 +16,7 @@ q) what is an asynchronous operation?
 a) asynchronous operation is the ability of a javascript program to run a long running task in the background while still receptive of new operations and execute them and later comeup with the result of the long running operation.
 
 q) what are callbacks?
-a) In javascript, functions are first class citizens which means they can be passed as an argument to other functions and used anywhere in the lifetime of that function.
+a) In javascript, functions are first class obects which means they can be passed as an argument to other functions and used anywhere in the lifetime of that function.
 
 Helps where the result of asynchronous operation is required for next batch of operations.
 
@@ -35,7 +35,7 @@ a) async-await is a syntactical sugar of Promises, which means that it makes imp
 
 
 2) what do you use for authentication? explain jwt. How to use it?
-a) JWT stands for Json Web Token. it is an open standard to for sharing sensitive information in json format between client and server. The data is properly encrypted (signed) from the server side so that it cannot be tampered while in transit.
+a) JWT stands for Json Web Token. it is an open standard for sharing sensitive information in json format between client and server. The data is properly encrypted (signed) from the server side so that it cannot be tampered while in transit.
 
 Workflow of JWT:
 1) Client sends login credentials as request.
@@ -59,7 +59,22 @@ bind return a function which can be called later.
 a) closures are ability of inner function to access the global scope or variables of outer function.
 
 7) what is a spread operator?
+a) a spread operaot is used to copy the contents of an object to other object.
 8) what is difference between let,const and var?
+a) var is global and function scope. it is hoisted and initialized to "undefined". it can be re-declared and updated.
+let is block scoped. it is hoisted but not initialized. it can be updated but not re-declared.
+const is block scoped. it too in hoisted and not initialzed. it can neither be re-declared nor updated. it should defined as soon as it is declared.
+
 9) what are arrow function?
+a) arrow functions are easier implementation of normal functions. it was introduced in es6. it need not use the "return" keyword if the function consists of a single line. it need not use paranthesis if function takes in a single parameter.
+
+to access the arguments in a normal function we use "arguments" keyword. we cannot use "arguments" in arrow function but we can use rest operator.
+
+normal functions can have duplicate parameters with no strict mode. arrow functions can never have duplicate parameters.
+
+we can call normal functions with "new" keyword. arrow functions cannot be called with "new" keyword.
+
+normal function gets hoisted at top. arrow function is not hoisted.
+
 10) explain about "this" key word? and there behaviour in arrow funtions?
 11) return 3rd highest and 3rd lowest number in an array.
