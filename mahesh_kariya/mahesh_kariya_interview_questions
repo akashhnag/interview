@@ -27,7 +27,7 @@ q) how can callback hell be avoided?
 a) It can be avoided using a promise or async await.
 
 q) what is async await?
-a) async-await is a syntactical sugar of Promises, which means that it makes implementing Promises a easier. 
+a) async-await is a syntactical sugar of Promises, which means that it makes implementing Promises easier. 
 
 "async" makes a function return a Promise, "await" makes a function wait for a Promise. 
 
@@ -62,6 +62,7 @@ a) i) const app=express();
       app.use('/',router);
 
 4) what is middleware?
+
 5) what is call,bind and apply?
 a) call function helps to refer the value of "this" to any object.
 apply is same as "call" but it takes array of values as second argument.

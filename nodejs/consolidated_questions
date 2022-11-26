@@ -1,0 +1,115 @@
+q) what is nodejs?
+a) nodejs is an open source cross platform javascript runtime environment built on Chrome's v8 engine and is used to create web servers. 
+
+q) features of nodejs.
+a) event driven
+b) non blocking(asynchronous)
+c) single threaded
+d) open source
+e) highly sclable
+f) no buffereing
+
+q) what is npm?
+a) npm stands for node package manager. it consists of variety of javascript libraries responsible for accomplishing certain task.
+
+q) what is REPL?
+a) REPL stands for Read Eval Print Loop. it is an interactive shell that processes nodejs expressions.
+
+q) what makes nodejs different from other server side programming language?
+a) the main difference betwween nodejs and other programming language is that nodejs uses "Single threaded event loop model" whereas other programming language use "multi threaded request-response model".
+
+q) what is multi threaded request-response model?
+a) a programming language using request-response multithreaded model will work like following:
+1) server receives a request from client.
+2) the server maintains a thread pool consisting of number of threads
+3) server will assign client request to thread and now thread's responsibility is to perform the given task(blocking or non-blocking), generate result and give it back to the server.
+4) after server receives the result, it forwards it to the client as response.
+
+so in this case every request is assigned a thread.
+
+q) drawbacks of multi threading request-response model.
+a) since every request is assigned a thread, the thread pool will sometime exhaust of its threads and will now block the incomeing requests from client.
+b) poor resource management(thread).
+
+q) what is thread pool?
+a) therad pool is a collection of threads ready to perform a task.
+
+q) explain single threaded event driven architecture.
+a) in single threaded event driven architecture, the server has some components like event queue, event loop and thread pool.
+
+event queue: all the requests coming to the server are pushed into the event queue, waiting for their turn to be executed.
+
+event loop: its an infinite running loop that takes requests from the event queue and executes it.
+
+thread pool: a collection of threads ready to take up any task.
+
+Below is how it works:
+a) a server receives a request from the client.
+b) the request is added to the "event queue".
+c) the event loop pulls out the request from the event queue and checks for the following:
+ i) if it is non-blocking, then it executes it immediately and produces result and send it back to the client as a response.
+ ii) if it is blocking(access to database, file system etc), it pulls a thread from the thread pool and assigns the task to it. and gets back to pulling new requests from the event queue.
+ the thread is now responsible for the execution of the request and generating results. and once its done, it returns it to the event loop which send it to the client as a response.
+
+
+q) what are global objects in nodejs?
+a) objects that are accessible thourhgout the node application are called global objects.
+e.g: setTimeout,clearTimeout,setInterval,clearInterval, console etc.
+
+q) what is process object?
+a) process is one of the global objects that provides runtime information of the program.
+some of its properties are process.env(),process.exit(),process.argv() 
+
+q) What are promises? give an example.
+a) Promises are used to execute multiple asynchronous operations where using a callback could 
+lead to "callback hell" and create an unmanageable code.
+
+Promises have 4 stages:
+1) Fulfilled: The promise action succeeded.
+2) Rejected: The promise action failed.
+3) Pending: The promise action niether fulfilled nor rejected.
+4) Settled: The promise action either fulfilled or rejected.
+
+Promise consumer: Any function can consume the promise with the help of "then()" and "catch()"
+methods.
+
+q) what is an asynchronous operation?
+a) asynchronous operation is the ability of a javascript program to run a long running task in the background while still receptive of new operations and execute them and later comeup with the result of the long running operation.
+
+q) what are callbacks?
+a) In javascript, functions are first class objects which means they can be passed as an argument to other functions and used anywhere in the lifetime of that function.
+
+Helps where the result of asynchronous operation is required for next batch of operations.
+
+q) what is a callback hell?
+a) callback hells are bunch of nested callback functions where result of a callback is dependent on previous callback. It creats a pyramid like structure which leads to unmanageable and unreadable code.
+
+q) how can callback hell be avoided?
+a) It can be avoided using a promise or async await.
+
+q) what is async await?
+a) async-await is a syntactical sugar of Promises, which means that it makes implementing Promises easier. 
+
+"async" makes a function return a Promise, "await" makes a function wait for a Promise. 
+
+"await" can be only called inside an async function.
+
+q) what is a middleware?
+a) as the name suggests, the middlewear sits between 2 parties and performs tasks. in nodejs middleware can take the request, performs some operations on it and pass the modified information to the response handler using the next() method.
+
+Practical questions:
+
+q) what do you use for authentication? explain jwt. How to use it?
+a) JWT stands for Json Web Token. it is an open standard for sharing sensitive information in json format between client and server. The data is properly encrypted (signed) from the server side so that it cannot be tampered while in transit.
+
+Workflow of JWT:
+1) Client sends login credentials as request.
+2) Server verifies it. prepares other useful information for authentication and authorization. Signs it and attaches an expiry date to the info. 
+3) Sent back to the client and client can perform authorization based on the token.
+4) Henceforth just the token can be sent as headers to the server for following requests.
+
+jwt.sign({id:1,name:akash},"top-secret", { algorithm: 'RS256' }, function(err, token) {
+  console.log(token);
+});
+
+jwt.verify()

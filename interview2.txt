@@ -8,7 +8,7 @@ a) with the help of callbacks, promises and async await.
 q) what do you prefer between async await and promise?
 
 q) differentiate between async.parallel and async.series.
-a) async has number of cotrol flows:
+a) async has number of control flows:
 i) parallel
 ii) series
 iii) waterfall
@@ -20,7 +20,7 @@ q) difference between promise.all and promise.allSettled?
 a) promise.all takes in an iterable of promises and returns a single promise. This promise is 
 fulfilled when all the promises are fulfilled, if any one promise was rejected, the resultant
 promise is also rejected.
-promise.allSettled too takes in a interable of promises and returns a single promise. it will 
+promise.allSettled too takes in a iterable of promises and returns a single promise. it will 
 return an object consisting of "Status" that may be "fulfilled" or "rejected" and the "value" if
 the promise return a value on resolve. on rejected status, it returns the rejected error 
 
@@ -35,7 +35,7 @@ a) debugger module
 
 q) explain routing mechanism in express js.
 
-q) what are middleware in express? id middleware confined to request or can be added to response also?
+q) what are middleware in express? is middleware confined to request or can be added to response also?
 
 q) event driven development in nodejs. event emitter etc.
 a) 
