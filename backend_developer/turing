@@ -1,0 +1,19 @@
+q) best practices for backend development
+a) 
+q) sharding
+q) serverless
+q) acid property
+q) layering of application(routing,controller,business logic layer etc)
+q) high level design 
+q) low level design
+q) webhooks
+q) pub sub model
+q) database indexing
+q) composite index
+q) cluster index
+q) no cluster index
+q) difference between "where" and "had in" 
+q) difference between "where" and "on"
+q) api gateway
+q) caching(redis) 
+q) nodejs event driven single threaded model

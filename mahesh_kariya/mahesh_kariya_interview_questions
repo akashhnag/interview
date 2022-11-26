@@ -16,7 +16,7 @@ q) what is an asynchronous operation?
 a) asynchronous operation is the ability of a javascript program to run a long running task in the background while still receptive of new operations and execute them and later comeup with the result of the long running operation.
 
 q) what are callbacks?
-a) In javascript, functions are first class obects which means they can be passed as an argument to other functions and used anywhere in the lifetime of that function.
+a) In javascript, functions are first class objects which means they can be passed as an argument to other functions and used anywhere in the lifetime of that function.
 
 Helps where the result of asynchronous operation is required for next batch of operations.
 
@@ -27,7 +27,7 @@ q) how can callback hell be avoided?
 a) It can be avoided using a promise or async await.
 
 q) what is async await?
-a) async-await is a syntactical sugar of Promises, which means that it makes implementing Promises a easier. 
+a) async-await is a syntactical sugar of Promises, which means that it makes implementing Promises easier. 
 
 "async" makes a function return a Promise, "await" makes a function wait for a Promise. 
 
@@ -48,8 +48,10 @@ jwt.sign({id:1,name:akash},"top-secret", { algorithm: 'RS256' }, function(err, t
 });
 
 jwt.verify()
+
 3) create a get and post request.
 4) what is middleware?
+
 5) what is call,bind and apply?
 a) call function helps to refer the value of "this" to any object.
 apply is same as "call" but it takes array of values as second argument.
@@ -59,7 +61,8 @@ bind return a function which can be called later.
 a) closures are ability of inner function to access the global scope or variables of outer function.
 
 7) what is a spread operator?
-a) a spread operaot is used to copy the contents of an object to other object.
+a) a spread operator is used to copy the contents of an object to other object.
+
 8) what is difference between let,const and var?
 a) var is global and function scope. it is hoisted and initialized to "undefined". it can be re-declared and updated.
 let is block scoped. it is hoisted but not initialized. it can be updated but not re-declared.

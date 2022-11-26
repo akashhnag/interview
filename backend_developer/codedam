@@ -1,0 +1,22 @@
+q) backend scaling
+q) horizontal and vertical scaling
+q) layers in backend service
+database layer, persistance layer, business layer, presentation layer
+q) aws lambda
+q) distributed database
+q) deployment
+q) git(master,dev,staging environment)
+q) ci/cd
+q) blue-green deployment pattern
+q) reverse proxy
+q) checks
+q) libuv in nodejs
+q) security in backend
+    a) size of payload
+    b) type of payload
+    c) contents
+    d) rate limiter
+    e) encryption
+    f) ports and services
+    g) disable introspection
+q) webhooks
