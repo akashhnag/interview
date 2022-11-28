@@ -1,0 +1,81 @@
+q) explain reactjs
+a) reactjs is a front end javascript library to build UI interfaces.
+
+q) difference between uncontrolled and controlled components in reactjs?
+a) controlled components are handled by state where as uncontrolled components are handled by
+DOM.
+
+q) what are features of reactjs?
+a) React uses:
+i) jsx
+ii) virtual dom
+iii) one way data-binding
+iv) component based architecture
+
+q) what is a component?
+a) it is an independent and reusable element just like javascript functions. it works in isolation and returns HTML.
+
+q) what is one way data binding?
+
+q) what is babel?
+a) babel is a javascript transpiler used to convert es6 code to es5 for browsers to understand.
+
+4) difference between virtual dom and real dom?
+a) virtual dom is a copy of real dom. whenever there is an updation, firstly the virtual dom is updated, then the virtual dom is compared with the real dom and and only the changes are updated on real dom instead of updating the entire dom.
+
+q) what are different types of components in reactjs? which one is more useful? 
+a) function component, class component.
+
+q) usestate in reactjs?
+a) used to manage the state of a component.
+
+q) prop drilling in reactjs?
+a) method of passing props deep down the hierarchy of components.
+
+q) react.strictmode?
+a) its a developer tool to check for issues in a web application.
+
+q) pass data in component?
+a) we pass data in component like attributes in HTML.
+
+q) what are hooks in reactjs?
+a) hooks allow functional components to have access to the state and lifecycle methods.
+it can be only called inside a functional component.
+it should be defined at the top level of the functional component.
+it cannot be conditional.
+
+q) how many hooks are there in reactjs?
+a) useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo.
+
+q) what is useEffect?
+a) useEffect is used to create side effects in a react component.
+
+q) what is useState?
+a) useState is used to create and manage state inside a component.
+
+15) what are props and why we use them?
+a) props stands for properties. they are arguments passed on to react components. they are passed as HTML attribute.
+used to pass values from parent to child component.
+
+16) is props the best way to transfer data to components?
+a) depends.
+
+q) how react router works in react?
+
+17) what is redux? what are middlewares in redux?
+a) redux is predictable container for storing state for javascript applications.
+it is a store to keep all states that can be accessed by number of components. the components 
+can also make changes to the store but its not as simple as updating a state using hooks.
+certain procedure needs to be followed.
+
+the store values can be updated using reducers and actions.
+
+reducer is a function that takes in current state and action as arguments and return updated state.
+
+we can create store using createStore() method in redux.
+
+we can use store.dispatch() method to dispatch an action to the reducer. 
+
+middleware: it intercepts actions and modify them and passes on to reducer.
+we can use it for logging, error handling, perform async operations etc.
+

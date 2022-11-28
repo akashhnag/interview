@@ -22,7 +22,7 @@ a) jsx stands for javascript and xml. it allows html to be written inside react.
 
 q) what is a component?
 a) it is an independent and reusable element just like javascript functions. it works in isolation
-an returns HTML.
+and returns HTML.
 
 q) difference between real dom and virtual dom??
 a) real dom is actually what you see in the screen whereas virtual dom is a blueprint of the
@@ -35,6 +35,7 @@ a) it is a lightweight programming language used to create dynamic web pages.
 
 q) map,filter and find method?
 q) map and forEach?
+
 q) props in reactjs?
 a) props stands for 'properties' and is a value passed from a parent componet to child component as 
 an attribute.

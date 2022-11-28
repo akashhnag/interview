@@ -1,14 +1,25 @@
 q) best practices for backend development
 a) 
 q) sharding
+a) sharding is splitting logical data in database into smaller sections and storing them in 
+different places
+
 q) serverless
+a) in serverless architecture, you just need to build and run services without worrying about 
+the infrasctruture management. you write code and deploy applications and is resources and the
+service provider takes care of its scaling automatically.
+
 q) acid property
+
 q) layering of application(routing,controller,business logic layer etc)
 q) high level design 
 q) low level design
 q) webhooks
 q) pub sub model
 q) database indexing
+a) indexing is similar to the indexing we ave in books. A database table may be divided into 
+number of blocks and we can store the primary keys of the and associated blocks in the index table so that its easily accessible the nest time.
+
 q) composite index
 q) cluster index
 q) no cluster index

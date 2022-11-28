@@ -6,7 +6,7 @@ a) event driven
 b) non blocking(asynchronous)
 c) single threaded
 d) open source
-e) highly sclable
+e) highly scalable
 f) no buffereing
 
 q) what is npm?
@@ -53,7 +53,7 @@ c) the event loop pulls out the request from the event queue and checks for the 
 
 
 q) what are global objects in nodejs?
-a) objects that are accessible thourhgout the node application are called global objects.
+a) objects that are accessible throughout the node application are called global objects.
 e.g: setTimeout,clearTimeout,setInterval,clearInterval, console etc.
 
 q) what is process object?
