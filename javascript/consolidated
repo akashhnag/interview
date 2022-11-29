@@ -1,5 +1,9 @@
-q) what is javscript?
-q) is javascript singlre theraded or multithreaded?
+q) what is javascript?
+a) Javascript is a programming language to bring funcitonality to the web page.
+
+q) is javascript single theraded or multithreaded?
+a) single threaded
+
 q) how does javascript handles asynchronous operations?
 q) what is event loop? how does it works?
 q) wht are promises?
@@ -25,7 +29,7 @@ Promise consumer: Any function can consume the promise with the help of "then()"
 methods.
 
 q) what is promise chaining?
-a)
+a) promise chaining is very helpful in handling multiple promises. in this a promise returns a value which can be accessed with the 'then()' method.
 
 q) what is an asynchronous operation?
 a) asynchronous operation is the ability of a javascript program to run a long running task in the background while still receptive of new operations and execute them and later comeup with the result of the long running operation.
@@ -49,8 +53,7 @@ a) async-await is a syntactical sugar of Promises, which means that it makes imp
 "await" can be only called inside an async function.
 
 5) ecmascript in javascript
-a) ecmascript is standard for javascript. it works towards making javascript a better scripting
-language that includex syntax, error handling, datatypes, inheritance, built in function etc.
+a) ecmascript is standard for javascript. it works towards making javascript a better scripting language that includes syntax, error handling, datatypes, inheritance, built in function etc.
 
 6) difference between let,const and var
 a var is global and functional scoped. var can be re-declared and updated.var is hoisted and 
@@ -60,14 +63,10 @@ initialized.
 const is also block scoped. it can neither be updated or re-declared. const is hoisted and not
 initialized. const should be initialzed at the time of declaration.
 
-7) spread operator in javascript
+q) spread operator in javascript
 a) spread operators are used to copy the contents of an object to another.
 
-8) arrow function in javascript.
-a) arrow functions are an iteration over normal functions introduced in ES6. it makes functions
-easier to use. 
-
-9) what are arrow function?
+q) what are arrow function?
 a) arrow functions are easier implementation of normal functions. it was introduced in es6. it need not use the "return" keyword if the function consists of a single line. it need not use paranthesis if function takes in a single parameter.
 
 to access the arguments in a normal function we use "arguments" keyword. we cannot use "arguments" in arrow function but we can use rest operator.
@@ -79,9 +78,7 @@ a) it is a syntactical superset of javascript which adds static typing (allows u
  to the variables).
 
 10) set timeout and set interval? how to stop it?
-a) setTimeout will execute a function after a given time. setInterval does the same thing but it 
-continously keeps doing it unless stopped explicitly. to stop the setTimeout method we can use
-"clearTimeout" and for stoping the setInterval we can use "clearInterval".
+a) setTimeout will execute a function after a given time. setInterval does the same thing but it continously keeps doing it unless stopped explicitly. to stop the setTimeout method we can use "clearTimeout" and for stoping the setInterval we can use "clearInterval".
 
 1) difference btween local and session storeage
 2) why is reactjs famous?

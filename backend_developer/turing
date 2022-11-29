@@ -16,9 +16,10 @@ q) high level design
 q) low level design
 q) webhooks
 q) pub sub model
+
 q) database indexing
-a) indexing is similar to the indexing we ave in books. A database table may be divided into 
-number of blocks and we can store the primary keys of the and associated blocks in the index table so that its easily accessible the nest time.
+a) indexing is similar to the indexing we have in books. A database table may be divided into 
+number of blocks and we can store the primary keys of the and associated blocks in the index table so that its easily accessible the next time.
 
 q) composite index
 q) cluster index

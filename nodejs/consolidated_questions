@@ -40,10 +40,10 @@ q) what is thread pool?
 a) therad pool is a collection of threads ready to perform a task. a node js thread pool by default has 4 threads but can be extended upto 128 threads.
 
 q) what are streams?
-a) stream are objects that let you read from a asource or write on to a destination. They are of 4 types:
-1) readable: stereams used for reading
+a) stream are objects that let you read from a source or write on to a destination. They are of 4 types:
+1) readable: streams used for reading
 2) writable: streams used for writin
-3) duplex: streams used fr both reading and writing
+3) duplex: streams used for both reading and writing
 4) transform: duplex streams used for computing output based on input. 
 
 q) explain single threaded event driven architecture.
@@ -74,18 +74,10 @@ some of its properties are process.env(),process.exit(),process.argv()
 
 q) Buffer class
 
-testing
-spawn and fork
-global objects in nodejs
-timer functions
-promise chaining
-Buffer class in nodejs
-excepetions in nodejs
-events in nodejs
-git rebase
+
 
 q) what is a middleware?
-a) as the name suggests, the middlewear sits between 2 parties and performs tasks. in nodejs middleware can take the request, performs some operations on it and pass the modified information to the response handler using the next() method.
+a) as the name suggests, the middleware sits between 2 parties and performs tasks. in nodejs middleware can take the request, performs some operations on it and pass the modified information to the response handler using the next() method.
 
 Practical questions:
 
@@ -105,3 +97,14 @@ jwt.sign({id:1,name:akash},"top-secret", { algorithm: 'RS256' }, function(err, t
 jwt.verify()
 
 q) setImmediate vs setTimeout vs process.nextTick
+
+testing
+q) what is a child process?
+a) though nodejs runs on a single thread using a single process. It may sometime need to more process for effcient funtioning. In this case we use the child process. There are 4 ways to create child process: spawn(),exec(), execFile(), fork().
+spawn and fork
+promise chaining
+Buffer class in nodejs
+excepetions in nodejs
+events in nodejs
+git rebase
+
