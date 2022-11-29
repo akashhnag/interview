@@ -1,0 +1,35 @@
+By Rajdeep Saha:
+
+q) what is Monolith architecture?
+a) A single tier software application where data access and user interface and combined in a single program and a single platform.
+
+pros: 1) easy to implement
+2) good for small projects
+3) resource efficient and small scale
+
+cons: 1) difficult to scale up
+2) long release cycles
+3) all or nothing deployment
+
+q) what is mocroservice?
+a) microservice is an approach of building a number of loosely coupled smaller services instead of a big program.
+
+q) charecteristics of micoservices.
+a) 1) independent; 2) scaling; 3) governance; 4) deployment; 5) testing
+
+q) microservices on AWS:
+a) we can deploy microservices on AWS in 3 different ways:
+1) EC2 instance: you can deploy microservices in ec2 instances with varied configuration on different instances.
+the application can be fronted by Aws api gateway or elastic load balancer
+2) serverless: aws lambda is a server less alternative to run microservices where each microservice can be deployed in a sinlge lambda functions which have auto scaling capabilities.
+3) containerization: micoservices can be also deployed as a container using aws elastic container service or aws elastic kubernetes service
+
+one can also make use a combination of all or some of above. som microservices can be hoisted on lambda function, some can run on ec2 instance and some can be containerized and run. 
+
+q) what is serverless?
+a) serverless is a cloud native development model which allows developers to deploy code and forget. The serverless still has servers but they are maintained by the service providers. They take care of provisioning, maintaining and scaling the infratructure. 
+once deployed, the application can automatically scale up or down and is only charged for usage, that means if the server is idle, it won't cost anything. 
+
+q) what is containerization?
+a) containerizarion is a type of virtualization in which components of the application are bundled in a single continer image and run in an isolated user space in shared operating system. 
+

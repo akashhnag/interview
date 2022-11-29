@@ -6,7 +6,7 @@ a) event driven
 b) non blocking(asynchronous)
 c) single threaded
 d) open source
-e) highly sclable
+e) highly scalable
 f) no buffereing
 
 q) what is npm?
@@ -14,6 +14,11 @@ a) npm stands for node package manager. it consists of variety of javascript lib
 
 q) what is REPL?
 a) REPL stands for Read Eval Print Loop. it is an interactive shell that processes nodejs expressions.
+
+q) what is libuv?
+a) libuv is a library written in c++ but used by nodejs to perform asynchronous system operations like reading files, fetching database etc.  
+
+q) how does nodejs performs asynchronous operations?
 
 q) what makes nodejs different from other server side programming language?
 a) the main difference betwween nodejs and other programming language is that nodejs uses "Single threaded event loop model" whereas other programming language use "multi threaded request-response model".
@@ -32,7 +37,14 @@ a) since every request is assigned a thread, the thread pool will sometime exhau
 b) poor resource management(thread).
 
 q) what is thread pool?
-a) therad pool is a collection of threads ready to perform a task.
+a) therad pool is a collection of threads ready to perform a task. a node js thread pool by default has 4 threads but can be extended upto 128 threads.
+
+q) what are streams?
+a) stream are objects that let you read from a asource or write on to a destination. They are of 4 types:
+1) readable: stereams used for reading
+2) writable: streams used for writin
+3) duplex: streams used fr both reading and writing
+4) transform: duplex streams used for computing output based on input. 
 
 q) explain single threaded event driven architecture.
 a) in single threaded event driven architecture, the server has some components like event queue, event loop and thread pool.
@@ -53,46 +65,24 @@ c) the event loop pulls out the request from the event queue and checks for the 
 
 
 q) what are global objects in nodejs?
-a) objects that are accessible thourhgout the node application are called global objects.
+a) objects that are accessible throughout the node application are called global objects.
 e.g: setTimeout,clearTimeout,setInterval,clearInterval, console etc.
 
 q) what is process object?
 a) process is one of the global objects that provides runtime information of the program.
 some of its properties are process.env(),process.exit(),process.argv() 
 
-q) What are promises? give an example.
-a) Promises are used to execute multiple asynchronous operations where using a callback could 
-lead to "callback hell" and create an unmanageable code.
+q) Buffer class
 
-Promises have 4 stages:
-1) Fulfilled: The promise action succeeded.
-2) Rejected: The promise action failed.
-3) Pending: The promise action niether fulfilled nor rejected.
-4) Settled: The promise action either fulfilled or rejected.
-
-Promise consumer: Any function can consume the promise with the help of "then()" and "catch()"
-methods.
-
-q) what is an asynchronous operation?
-a) asynchronous operation is the ability of a javascript program to run a long running task in the background while still receptive of new operations and execute them and later comeup with the result of the long running operation.
-
-q) what are callbacks?
-a) In javascript, functions are first class objects which means they can be passed as an argument to other functions and used anywhere in the lifetime of that function.
-
-Helps where the result of asynchronous operation is required for next batch of operations.
-
-q) what is a callback hell?
-a) callback hells are bunch of nested callback functions where result of a callback is dependent on previous callback. It creats a pyramid like structure which leads to unmanageable and unreadable code.
-
-q) how can callback hell be avoided?
-a) It can be avoided using a promise or async await.
-
-q) what is async await?
-a) async-await is a syntactical sugar of Promises, which means that it makes implementing Promises easier. 
-
-"async" makes a function return a Promise, "await" makes a function wait for a Promise. 
-
-"await" can be only called inside an async function.
+testing
+spawn and fork
+global objects in nodejs
+timer functions
+promise chaining
+Buffer class in nodejs
+excepetions in nodejs
+events in nodejs
+git rebase
 
 q) what is a middleware?
 a) as the name suggests, the middlewear sits between 2 parties and performs tasks. in nodejs middleware can take the request, performs some operations on it and pass the modified information to the response handler using the next() method.
@@ -113,3 +103,5 @@ jwt.sign({id:1,name:akash},"top-secret", { algorithm: 'RS256' }, function(err, t
 });
 
 jwt.verify()
+
+q) setImmediate vs setTimeout vs process.nextTick

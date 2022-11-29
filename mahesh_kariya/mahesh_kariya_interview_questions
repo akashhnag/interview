@@ -40,16 +40,27 @@ a) JWT stands for Json Web Token. it is an open standard for sharing sensitive i
 Workflow of JWT:
 1) Client sends login credentials as request.
 2) Server verifies it. prepares other useful information for authentication and authorization. Signs it and attaches an expiry date to the info. 
-3) Sent back to the client and client can perform authorization based on the token.
+3) Replies back to the client and client can perform authorization based on the token.
 4) Henceforth just the token can be sent as headers to the server for following requests.
 
 jwt.sign({id:1,name:akash},"top-secret", { algorithm: 'RS256' }, function(err, token) {
   console.log(token);
 });
 
-jwt.verify()
+jwt.verify();
 
 3) create a get and post request.
+a) i) const app=express();
+      app.get('/',(req,res)=>{
+        // request operations
+      });
+
+  ii) const router=express.Router();
+      router.post('/',(req,res)=>{
+        //operations
+      })
+      app.use('/',router);
+
 4) what is middleware?
 
 5) what is call,bind and apply?
