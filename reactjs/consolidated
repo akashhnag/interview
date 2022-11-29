@@ -26,8 +26,32 @@ a) virtual dom is a copy of real dom. whenever there is an updation, firstly the
 q) what are different types of components in reactjs? which one is more useful? 
 a) function component, class component.
 
-q) usestate in reactjs?
-a) used to manage the state of a component.
+q) what is a state?
+a) The state is a built-in React object that is used to contain data or information about the component. A component’s state can change over time; whenever it changes, the component re-renders. The change in state can happen as a response to user action or system-generated events and these changes determine the behavior of the component and how it will render. 
+
+q) what are props and why we use them?
+a) props stands for properties. they are arguments passed on to react components. they are passed as HTML attribute.
+used to pass values from parent to child component.
+
+q) what are various lifecycle methods?
+a) there are 3 phases in react  lifecycle:
+1) mounting: in this phase the nitiali render of the component takes place. Mainly 2 lifecycle method runs here: i) getDerivedStatesFromProps(): THis method is rsponsible to update the state of the component based incoming props.
+
+static getDerivedStateFromProps(props,state){
+    return {}
+}
+
+ii) componentDidMount(): this method confirms that the component has successfully mounted.
+
+2) Updating: This oocurs when there is update in state and the compoent re-renders. It has folowing methods:
+
+i) getDerivedStateFromProps
+ii) shouldComponentUPdate: this method can return a boolean value, if true it renders the update. default return value is true.
+iii) getSnapshotBeforeUPdate: this method gets the older values of state and props.
+iv) componentDidUPdate: this method confirms that component got updated after state change.
+
+3) unmounting phase: This is the phase when the compoent gets removed from the dom.
+i) componentWillUnmount: the method tells that the compoent is removed from the dom and is umounted.
 
 q) prop drilling in reactjs?
 a) method of passing props deep down the hierarchy of components.
@@ -36,7 +60,13 @@ q) react.strictmode?
 a) its a developer tool to check for issues in a web application.
 
 q) pass data in component?
-a) we pass data in component like attributes in HTML.
+a) we pass data in component in the form of props like attributes in HTML.
+
+q) what are react pure components?
+a) a react component that renders same output for a given input of props and state is called pure component.
+
+q) what is a higher order component?
+a) a higher order component takes in a number of components and returns a new component based of incoming components. just like higers order functions in javascript.
 
 q) what are hooks in reactjs?
 a) hooks allow functional components to have access to the state and lifecycle methods.
@@ -44,23 +74,25 @@ it can be only called inside a functional component.
 it should be defined at the top level of the functional component.
 it cannot be conditional.
 
-q) how many hooks are there in reactjs?
-a) useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo.
+q) what are different types of hooks in reactjs:
+1) useState: used to create and manage states in a funcitonal component.
+2) useEffect: used to create side-effecs like fetching api data, updating dom directly and timers.
+3) useContext: used to fetch value from context provider
+4) useRef: used to store mutated values that don't change on renders. also used to fetch dom elements.
+5) useReducer: same as useState but uses the concept of reducer, action and dispatch.
+6) useMemo: returns a memoized value.
+7) useCallback: return a memoized function.
 
-q) what is useEffect?
-a) useEffect is used to create side effects in a react component.
-
-q) what is useState?
-a) useState is used to create and manage state inside a component.
-
-15) what are props and why we use them?
-a) props stands for properties. they are arguments passed on to react components. they are passed as HTML attribute.
-used to pass values from parent to child component.
 
 16) is props the best way to transfer data to components?
 a) depends.
 
 q) how react router works in react?
+a) <BrowserRouter>
+<Routes>
+<Route path='/index' element={IndexComponent}></Route>
+</Routes>
+</browserRouter>
 
 17) what is redux? what are middlewares in redux?
 a) redux is predictable container for storing state for javascript applications.
